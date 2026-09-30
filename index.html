@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK YOUR TICKET | Shows, Movies & Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="authPage" class="auth-page">
+    <div class="auth-card">
+
+      <div class="auth-brand">
+        <span class="brand-black">BOOK</span>
+        <span class="brand-blue">YOUR</span>
+        <span class="brand-black">TICKET</span>
+      </div>
+
+      <p class="eyebrow blue">SHOWS • MOVIES • GAMES</p>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-view="loginForm">
+          Log In
+        </button>
+
+        <button class="auth-tab" data-auth-view="registerForm">
+          Create Account
+        </button>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+
+        <h1>Welcome back</h1>
+
+        <p class="auth-text">
+          Log in to discover and book entertainment events.
+        </p>
+
+        <label for="loginUserId">User ID</label>
+
+        <input
+          id="loginUserId"
+          required
+          placeholder="Enter your User ID"
+          autocomplete="username"
+        >
+
+        <label for="loginPassword">Password</label>
+
+        <input
+          id="loginPassword"
+          type="password"
+          required
+          placeholder="Enter your password"
+          autocomplete="current-password"
+        >
+
+        <button class="primary-btn auth-submit" type="submit">
+          Log In
+        </button>
+
+      </form>
+
+      <form id="registerForm" class="auth-form hidden">
+
+        <h1>Create a free account</h1>
+
+        <p class="auth-text">
+          Create one account to book shows, movies, and games.
+        </p>
+
+        <label for="registerName">Full Name</label>
+
+        <input
+          id="registerName"
+          required
+          minlength="2"
+          placeholder="Enter your full name"
+          autocomplete="name"
+        >
+
+        <label for="registerEmail">Email Address</label>
+
+        <input
+          id="registerEmail"
+          type="email"
+          required
+          placeholder="Enter your email"
+          autocomplete="email"
+        >
+
+        <label for="registerUserId">Choose User ID</label>
+
+        <input
+          id="registerUserId"
+          required
+          minlength="3"
+          maxlength="20"
+          placeholder="Example: PRUDHVI101"
+          autocomplete="username"
+        >
+
+        <small>
+          Use 3–20 letters, numbers, or underscores only.
+        </small>
+
+        <label for="registerPassword">Create Password</label>
+
+        <input
+          id="registerPassword"
+          type="password"
+          required
+          minlength="6"
+          placeholder="Minimum 6 characters"
+          autocomplete="new-password"
+        >
+
+        <label for="confirmPassword">Confirm Password</label>
+
+        <input
+          id="confirmPassword"
+          type="password"
+          required
+          minlength="6"
+          placeholder="Re-enter your password"
+          autocomplete="new-password"
+        >
+
+        <button class="primary-btn auth-submit" type="submit">
+          Create Account
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <div id="appPage" class="hidden">
+
+    <header class="header">
+
+      <div class="brand">
+        <span class="brand-black">BOOK</span>
+        <span class="brand-blue">YOUR</span>
+        <span class="brand-black">TICKET</span>
+      </div>
+
+      <nav>
+
+        <button class="nav-btn active" data-page="events">
+          Explore
+        </button>
+
+        <button class="nav-btn" data-page="bookings">
+          My Bookings
+          <span id="bookingBadge" class="badge">0</span>
+        </button>
+
+        <button id="logoutBtn" class="logout-btn">
+          Log Out
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main class="container">
+
+      <div id="userGreeting" class="user-greeting"></div>
+
+      <section id="eventsPage"> 
+
+        <div class="hero">
+
+          <div>
+
+            <p class="eyebrow">
+              ENTERTAINMENT MADE SIMPLE
+            </p>
+
+            <h1>
+              Shows, movies,<br>
+              and games.
+            </h1>
+
+            <p>
+              Choose an experience, select tickets,
+              and manage your bookings in one place.
+            </p>
+
+          </div>
+
+
+          <div class="hero-card">
+
+            <div>🎟️</div>
+
+            <b>
+              <span class="brand-black">BOOK</span>
+              <span class="brand-blue">YOUR</span>
+              <span class="brand-black">TICKET</span>
+            </b>
+
+            <small>
+              Shows • Movies • Games
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="theme-grid">
+
+          <button
+            class="theme-card shows-theme"
+            onclick="selectCategory('Shows')"
+          >
+            <span>🎤</span>
+            <strong>Shows</strong>
+            <small>
+              Concerts, comedy and live events
+            </small>
+          </button>
+
+
+          <button
+            class="theme-card movies-theme"
+            onclick="selectCategory('Movies')"
+          >
+            <span>🎬</span>
+            <strong>Movies</strong>
+            <small>
+              Choose a movie show date
+            </small>
+          </button>
+
+
+          <button
+            class="theme-card games-theme"
+            onclick="selectCategory('Games')"
+          >
+            <span>🎮</span>
+            <strong>Games</strong>
+            <small>
+              Gaming tournaments and events
+            </small>
+          </button>
+
+        </div>
+
+
+        <div class="section-head">
+
+          <div>
+
+            <p class="eyebrow blue">
+              DISCOVER EVENTS
+            </p>
+
+            <h2>
+              Available Bookings
+            </h2>
+
+          </div>
+
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search events or locations..."
+          >
+
+        </div>
+
+
+        <div id="filterButtons" class="filters"></div>
+
+        <div id="eventGrid" class="event-grid"></div>
+
+      </section>
+
+
+      <section id="bookingsPage" class="hidden">
+
+        <div class="section-head">
+
+          <div>
+
+            <p class="eyebrow blue">
+              YOUR RECORDS
+            </p>
+
+            <h2>
+              My Booking History
+            </h2>
+
+          </div>
+
+          <button id="browseBtn" class="outline-btn">
+            Explore Events
+          </button>
+
+        </div>
+
+        <div id="bookingList"></div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <div id="bookingModal" class="overlay hidden">
+
+    <div class="modal">
+
+      <button class="close-btn" data-close="bookingModal">
+        ×
+      </button>
+
+      <div id="modalContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <div id="ticketModal" class="overlay hidden">
+
+    <div class="modal">
+
+      <button class="close-btn" data-close="ticketModal">
+        ×
+      </button>
+
+      <div id="ticketContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

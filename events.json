@@ -1,0 +1,99 @@
+[
+  {
+    "id": "E101",
+    "name": "Avengers: Endgame",
+    "category": "Movies",
+    "venueType": "Hall",
+    "venue": "Sangameswera cenimas 1",
+    "showDates": [
+      "2026-09-22T18:30",
+      "2026-09-23T18:30",
+      "2026-09-24T18:30"
+    ],
+    "price": 250,
+    "availableSeats": 40,
+    "image": "images/avengersdoomsday.webp",
+    "description": "Experience the epic superhero finale on the big screen."
+  },
+  {
+    "id": "E102",
+    "name": "kalki_2898_AD Re-Release",
+    "category": "Movies",
+    "venueType": "Hall",
+    "venue": "Asha Hall ",
+    "showDates": [
+      "2026-09-23T20:00",
+      "2026-09-24T20:00",
+      "2026-09-25T20:00"
+    ],
+    "price": 300,
+    "availableSeats": 35,
+    "image": "images/Kalki_2898_AD.jpg",
+    "description": "Watch the acclaimed science-fiction adventure in an immersive cinema hall."
+  },
+    {
+    "id": "E103",
+    "name": "Paradise",
+    "category": "Movies",
+    "venueType": "Hall",
+    "venue": "priya cenimas,Tenali",
+    "showDates": [
+      "2026-09-27T18:30",
+      "2026-09-28T18:30",
+      "2026-09-29T18:30"
+    ],
+    "price": 250,
+    "availableSeats": 40,
+    "image": "images/paradise.jpg",
+    "description": "Experience the epic superhero finale on the big screen."
+  },  
+  {
+    "id": "E201",
+    "name": "AR Rahman Live Concert",
+    "category": "Shows",
+    "venueType": "Venue",
+    "venue": "Vignan Main Ground,Vadlamudi",
+    "dateTime": "2026-09-26T18:00",
+    "price": 800,
+    "availableSeats": 100,
+    "image": "images/concert.jpg",
+    "description": "A live music evening with celebrated melodies and stage performances."
+  },
+  
+  {
+    "id": "E202",
+    "name": "Comedy Night Live",
+    "category": "Shows",
+    "venueType": "Venue",
+    "venue": "City Convention Centre",
+    "dateTime": "2026-09-27T19:30",
+    "price": 350,
+    "availableSeats": 60,
+    "image": "images/comedy.svg",
+    "description": "An entertaining night of stand-up comedy and laughter."
+  },
+  {
+    "id": "E301",
+    "name": "Battle Arena Tournament",
+    "category": "Games",
+    "venueType": "Gaming Arena",
+    "venue": "Level Up Esports Arena",
+    "dateTime": "2026-09-28T11:00",
+    "price": 200,
+    "availableSeats": 48,
+    "image": "images/gaming.svg",
+    "description": "Join the local multiplayer gaming tournament and compete for prizes."
+  },
+  {
+    "id": "E302",
+    "name": "Racing Challenge Finals",
+    "category": "Games",
+    "venueType": "Gaming Zone",
+    "venue": "Pixel Play Zone",
+    "dateTime": "2026-09-30T15:00",
+    "price": 150,
+    "availableSeats": 30,
+    "image": "images/racing.svg",
+    "description": "A fast-paced gaming event for racing-game fans."
+  }
+]
