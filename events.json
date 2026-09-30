@@ -69,7 +69,7 @@
     "dateTime": "2026-09-27T19:30",
     "price": 350,
     "availableSeats": 60,
-    "image": "comedy.svg",
+    "image": "comedy.png",
     "description": "An entertaining night of stand-up comedy and laughter."
   },
   {
@@ -81,7 +81,7 @@
     "dateTime": "2026-09-28T11:00",
     "price": 200,
     "availableSeats": 48,
-    "image": "gaming.svg",
+    "image": "gaming.png",
     "description": "Join the local multiplayer gaming tournament and compete for prizes."
   },
   {
@@ -93,7 +93,7 @@
     "dateTime": "2026-09-30T15:00",
     "price": 150,
     "availableSeats": 30,
-    "image": "racing.svg",
+    "image": "racing.png",
     "description": "A fast-paced gaming event for racing-game fans."
   }
 ]
