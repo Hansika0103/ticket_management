@@ -56,7 +56,7 @@
     "dateTime": "2026-09-26T18:00",
     "price": 800,
     "availableSeats": 100,
-    "image": "images/concert.jpg",
+    "image": "concert.jpg",
     "description": "A live music evening with celebrated melodies and stage performances."
   },
   
@@ -93,7 +93,7 @@
     "dateTime": "2026-09-30T15:00",
     "price": 150,
     "availableSeats": 30,
-    "image": "images/racing.svg",
+    "image": "racing.svg",
     "description": "A fast-paced gaming event for racing-game fans."
   }
 ]
