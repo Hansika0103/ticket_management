@@ -12,7 +12,7 @@
     ],
     "price": 250,
     "availableSeats": 40,
-    "image": "images/avengersdoomsday.webp",
+    "image": "avengersdoomsday.webp",
     "description": "Experience the epic superhero finale on the big screen."
   },
   {
@@ -28,7 +28,7 @@
     ],
     "price": 300,
     "availableSeats": 35,
-    "image": "images/Kalki_2898_AD.jpg",
+    "image": "Kalki_2898_AD.jpg",
     "description": "Watch the acclaimed science-fiction adventure in an immersive cinema hall."
   },
     {
@@ -44,7 +44,7 @@
     ],
     "price": 250,
     "availableSeats": 40,
-    "image": "images/paradise.jpg",
+    "image": "paradise.jpg",
     "description": "Experience the epic superhero finale on the big screen."
   },  
   {
@@ -69,7 +69,7 @@
     "dateTime": "2026-09-27T19:30",
     "price": 350,
     "availableSeats": 60,
-    "image": "images/comedy.svg",
+    "image": "comedy.svg",
     "description": "An entertaining night of stand-up comedy and laughter."
   },
   {
@@ -81,7 +81,7 @@
     "dateTime": "2026-09-28T11:00",
     "price": 200,
     "availableSeats": 48,
-    "image": "images/gaming.svg",
+    "image": "gaming.svg",
     "description": "Join the local multiplayer gaming tournament and compete for prizes."
   },
   {
